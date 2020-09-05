@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "HKGrotesk", "Helvetica Neue-Light", "Helvetica", "sans serif"; 
+    color: black;
+    background-image: url(/bcd\ image.jpg);
+}
+
+header{
+    background: black;
+    color: white;
+}
+
+/*  */
+.top{
+    background:black;
+}
+
+/* Having issues with positioning the logo. It messes up all the other elements! To be continued...
+.logo {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    float: left;
+    width: 8%;
+    z-index: 2;
+} */
+
+/* "Get in touch" button */
+.button{
+    text-decoration: none; /* removes the underline */
+    color: white;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 80px; /* this is to cover the first page with a black background */
+    font-size: 1.5em;
+    text-align: center;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button:hover{
+    color: rgb(231, 231, 104);
+    font-weight: bold;
+    font-size: 1.6em
+}
+
+/* profile photo - to be changed in the foresseable future: */
+.me{
+    position: relative;
+    display: flex; 
+    margin: 0 auto;
+    width: 15%;
+    border-radius: 5%;
+    border: 2px solid rgb(65, 231, 243);
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    width: 50%;
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+    margin: 20px auto 10px auto;
+}
+
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    position: block;
+    letter-spacing: 4px;
+    margin: 50px auto 50px auto;
+}
+
+nav{
+    background-color: orange;
+    position: relative;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    height: 55px;
+    margin: 20px auto;
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+ul li:hover{
+    background-color: white;
+}
+
+nav li{
+    width: 30%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-size: 24px;
+}
+
+li{
+    width: 100%;
+    text-align: center;
+}
+
+nav li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    transform: scale(0.5, 1);
+    width: 100%;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+
+article{
+    position: relative;
+    margin: 0 0 0 20px;
+}
+
+
+/* main section titles */
+h2{
+    width: 100%;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+}
+
+.intro p, .experience p, #portfolio p{
+    position: relative;
+    display: block;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    border: 2px dashed black;
+}
+
+h4 {
+    font-size: 25px;
+    text-decoration: underline;
+    padding: 0;
+    margin: 30px auto 0 auto;
+}
+
+#about, #portfolio, #Contact{
+    margin-top: 10px;
+    position: relative;
+    line-height: 2em;
+    text-align: center;
+}
+
+#Contact{
+    top: 20px;
+}
+#about p{
+    font-size: 1.2em;
+    line-height: 2em;
+    position: relative;
+    display: flexbox;
+    width: 90%;
+    margin: 10px 0 15px 0;
+    padding: 10px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+#portfolio p{
+    font-size: 1.2em;
+    line-height: 2em;
+    position: relative;
+    display: flexbox;
+    width: 90%;    
+    margin: 10px 0 15px 0;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.name, .email{
+    padding: 5px;
+    width: 40%;
+}
+
+.message{
+    padding: 15px;
+    width: 40%;
+}
+
+section#Contact .upload input, section#Contact .upload textarea{
+    width: 20%;
+    padding: 5px;
+    max-width: 900px;
+}
+
+.upload{
+    background: lightgray;
+    margin: 0 auto;
+}
+
+footer{
+    position: relative;
+    margin: 100px auto 30px auto;
+    text-align: center;
+    background: white;
+    font-weight: 700;
+    padding: 20px;
+}
+
+
+/* media queries */
+@media(max-width: 800px) {
+    header img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 200px;
+    }
+    h2 {
+        width: 50%;
+    }
+
+    nav{
+        width: 90%;
+        white-space: normal;
+    }
+  
+    #about{
+        width: 80%;
+    }
+}
+
+@media(max-width: 553px){
+    nav{
+        position: static;
+        display: block;
+        overflow: hidden;
+    }
+
+    nav ul{
+        display: block;
+    }
+}
